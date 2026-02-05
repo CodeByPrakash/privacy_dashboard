@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "urlFilter": "|http://",
+      "excludedDomains": ["localhost", "127.0.0.1"],
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]

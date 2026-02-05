@@ -1,0 +1,7 @@
+Student
+email - student@gmail.com
+password - student@1234
+
+Admin
+email - admin@gmail.com
+password- admin@1234

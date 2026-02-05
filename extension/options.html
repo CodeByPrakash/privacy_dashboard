@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Privacy Tracker Options</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 20px; max-width: 520px; }
+      label { display: block; margin-top: 12px; }
+      input, textarea { width: 100%; padding: 8px; margin-top: 6px; }
+      button { margin-top: 16px; padding: 8px 12px; }
+      .note { color: #555; font-size: 12px; }
+    </style>
+  </head>
+  <body>
+    <h2>Privacy Tracker Settings</h2>
+    <p class="note">Set your API base, extension key, and access token.</p>
+    <label>
+      API Base URL
+      <input id="apiBase" placeholder="http://localhost:3000" />
+    </label>
+    <label>
+      Extension API Key
+      <input id="apiKey" placeholder="from .env" />
+    </label>
+    <label>
+      Access Token
+      <input id="token" placeholder="Generate in student dashboard" />
+    </label>
+    <label>
+      Block List (one per line)
+      <textarea id="blockList" rows="4" placeholder="example.com"></textarea>
+    </label>
+    <label>
+      Allow List (one per line)
+      <textarea id="allowList" rows="4" placeholder="allowed.example.com"></textarea>
+    </label>
+    <button id="save">Save</button>
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Dashboard Tracker",
+  "version": "0.1.0",
+  "description": "Logs visited URLs to the Privacy Dashboard.",
+  "permissions": ["tabs", "storage", "declarativeNetRequest", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "block_insecure_http",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "action": {
+    "default_title": "Privacy Tracker",
+    "default_popup": "popup.html"
+  }
+}
